@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF4F4F4">
+    <ImageView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/bg_login"
+        android:scaleType="centerCrop"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="30dp"
+        android:background="#FFFFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/pwd_linearLayout">
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="18dp"
+            android:src="@mipmap/username" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="15dp"
+            android:background="#FF9E9E9E" />
+
+        <EditText
+            android:id="@+id/input_item_username"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="请输入账号" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pwd_linearLayout"
+        android:layout_width="match_parent"
+
+        android:layout_height="55dp"
+        android:layout_margin="30dp"
+        android:background="#FFFFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="18dp"
+            android:src="@mipmap/userpwd" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="15dp"
+            android:background="#FF9E9E9E" />
+
+        <EditText
+            android:id="@+id/input_item_password"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="请输入密码"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pwd2_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="30dp"
+        android:background="#FFFFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/pwd_linearLayout">
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="18dp"
+            android:src="@mipmap/userpwd" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="15dp"
+            android:background="#FF9E9E9E" />
+
+        <EditText
+            android:id="@+id/input_item_password2"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="请再次输入密码"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/action_submit"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="30dp"
+        android:text="注册"
+        android:textSize="23dp"
+        app:backgroundTint="#FF00C2EE"
+        app:cornerRadius="28dp"
+        app:layout_constraintTop_toBottomOf="@+id/pwd2_linearLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

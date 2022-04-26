@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/erweima_background"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/jiankangma"
+        android:layout_width="256dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/shape4"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/jiankangbao"
+        tools:ignore="MissingConstraints" />
+    <ImageButton
+        android:id="@+id/xingchengma"
+        android:layout_width="256dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/jiankangma"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape4"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/xingchengma" />
+    <ImageButton
+        android:id="@+id/menjinma"
+        android:layout_width="256dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/xingchengma"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape4"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/menjinma" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/quxiao"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/menjinma"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#ffff"
+        android:text="❌"
+        app:cornerRadius="90dp" >
+    </com.google.android.material.button.MaterialButton>
+</RelativeLayout>
